@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makro İndir | Üçüncü Binyıl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0097FF',
+                        darkNavy: '#002E4C',
+                        darkFooter: '#00192A',
+                        textGray: '#555555',
+                        lightGray: '#F8F9FA'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to right bottom, rgba(0, 46, 76, 0.9), rgba(0, 25, 42, 0.95)), url('https://images.unsplash.com/photo-1581094794320-c91775743a80?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-lightGray">
+
+    <!-- Header -->
+    <header class="bg-darkNavy text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="flex items-center group" aria-label="Üçüncü Binyıl - Ana Sayfa">
+                    <img src="assets/img/logo.png" alt="Üçüncü Binyıl" class="h-10 w-auto group-hover:opacity-90 transition">
+                </a>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-primary transition">Ana Sayfa</a>
+                <a href="koni.html" class="hover:text-primary transition">Koni Hesaplayıcı</a>
+                <a href="kfactor.html" class="hover:text-primary transition">K-Faktör Hesaplayıcı</a>
+                <a href="agirlik.html" class="hover:text-primary transition">Teorik Ağırlık</a>
+                <a href="makro-indir.html" class="text-primary transition" aria-current="page">Makro İndir</a>
+                <a href="https://www.ucuncubinyil.com/iletisim" target="_blank" rel="noopener"
+                    class="hover:text-primary transition">İletişim</a>
+            </nav>
+            <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+                type="button" aria-label="Menüyü Aç/Kapat" aria-controls="mobileMenu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-darkNavy/95 backdrop-blur">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col gap-2 text-sm font-medium">
+                <a href="index.html" class="hover:text-primary transition py-2">Ana Sayfa</a>
+                <a href="koni.html" class="hover:text-primary transition py-2">Koni Hesaplayıcı</a>
+                <a href="kfactor.html" class="hover:text-primary transition py-2">K-Faktör Hesaplayıcı</a>
+                <a href="agirlik.html" class="hover:text-primary transition py-2">Teorik Ağırlık</a>
+                <a href="makro-indir.html" class="text-primary py-2" aria-current="page">Makro İndir</a>
+                <a href="https://www.ucuncubinyil.com/iletisim" target="_blank" rel="noopener"
+                    class="hover:text-primary transition py-2">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="py-20 max-w-7xl mx-auto px-6 flex-grow w-full">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-darkNavy mb-4">Makro Dosyaları</h2>
+            <div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+            <p class="text-gray-500 mt-4 max-w-2xl mx-auto">İhtiyacınız olan makro dosyalarını aşağıdan indirebilirsiniz.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Macro Card 1 -->
+            <a href="assets/files/ucuncubinyil_delik.macro" download="ucuncubinyil_delik.macro" target="_blank"
+                class="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 border border-transparent hover:border-blue-100 relative overflow-hidden flex flex-col items-center text-center">
+                
+                <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                </div>
+
+                <h3 class="text-lg font-bold text-darkNavy mb-2 group-hover:text-primary transition-colors">Delik Makrosu</h3>
+                <code class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded mb-4 font-mono w-full truncate">ucuncubinyil_delik.macro</code>
+                
+                <div class="mt-auto flex items-center text-primary font-semibold text-sm">
+                    İndir <span class="ml-2 group-hover:translate-y-1 transition-transform">⬇</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkFooter text-white py-12 border-t border-white/5 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4">ÜÇÜNCÜ BİNYIL</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm">Mühendislik ve eğitimde mükemmeliyetin
+                        adresi. Teknik hesaplama araçlarımız ile projelerinizde hız kazanın.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-primary">Hızlı Linkler</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Ana Sayfa</a></li>
+                        <li><a href="koni.html" class="hover:text-white transition">Koni Hesaplayıcı</a></li>
+                        <li><a href="kfactor.html" class="hover:text-white transition">K-Faktör Hesaplayıcı</a></li>
+                        <li><a href="agirlik.html" class="hover:text-white transition">Teorik Ağırlık</a></li>
+                        <li><a href="makro-indir.html" class="text-primary transition">Makro İndir</a></li>
+                        <li><a href="https://www.ucuncubinyil.com/hakkimizda"
+                                class="hover:text-white transition">Hakkımızda</a></li>
+                        <li><a href="https://www.ucuncubinyil.com/egitimler"
+                                class="hover:text-white transition">Eğitimler</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-primary">İletişim</h4>
+                    <p class="text-sm text-gray-400">info@ucuncubinyil.com</p>
+                    <p class="text-sm text-gray-400 mt-2">+90 212 123 45 67</p>
+                </div>
+            </div>
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 Üçüncü Binyıl Akademi. Tüm hakları saklıdır.</p>
+                <div class="mt-2 md:mt-0">Design inspired by ucuncubinyil.com</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const btn = document.getElementById('menuBtn');
+            const menu = document.getElementById('mobileMenu');
+            if (!btn || !menu) return;
+
+            function closeMenu() {
+                menu.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+
+            btn.addEventListener('click', function () {
+                const willOpen = menu.classList.contains('hidden');
+                menu.classList.toggle('hidden');
+                btn.setAttribute('aria-expanded', String(willOpen));
+            });
+
+            menu.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', closeMenu);
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeMenu();
+            });
+        })();
+    </script>
+
+</body>
+
+</html>

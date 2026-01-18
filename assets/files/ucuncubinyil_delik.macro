@@ -1,0 +1,244 @@
+﻿NX 1957
+Macro File: C:\Users\ucuncubinyil\Desktop\ucuncubinyil_delik.macro
+Macro Version 7.50
+Macro List Language and Codeset: english 17
+Created by ucuncubinyil on Mon Feb 15 16:21:26 2021
+Part Name Display Style: $FILENAME
+Selection Parameters 1 2 0.229167 1
+Display Parameters 1.000000 14.895833 8.093750 -1.000000 -6.543357 1.000000 -5.456643
+*****************
+RESET
+CUSTOM HEADER 26 "ResourceBar" 0
+CUSTOM 26 1 2 48 ! Activate Machining Feature Navigator
+EVENT FOCUS_IN -30 10500, 262144, 0, 0, 0! 
+ASK_ITEM 262144 (1 BOOL 10500) = 0  ! 
+EVENT FOCUS_IN -30 10500, 262144, 0, 0, 0! 
+ASK_ITEM 262144 (1 BOOL 10500) = 0  ! 
+CUSTOM HEADER 29 "HD3D_Node" 0
+CUSTOM 29 UGS::CamUI::NavViewFeature * TREE_TYPE * NODE_SELECT * 2 * (0 0) ! model4
+CUSTOM 29 UGS::CamUI::NavViewFeature * TREE_TYPE * NODE_MENUPOPUP * 2 * (0 0) ! model4
+DYN_POP_TOGGLE 1 1 "" ! Find Features...
+ASK_ITEM 1638400 (1 BOOL 0) = 1  ! Show Previous State
+ASK_ITEM 1638400 (1 BOOL 0) = 0  ! Show Previous State
+ASK_ITEM 2293760 (1 BOOL 0) = 1  ! Use Feature Name as Type
+ASK_ITEM 2490368 (1 BOOL 0) = 1  ! Map Features
+ASK_ITEM 2490368 (1 BOOL 0) = 0  ! Map Features
+ASK_ITEM 3670016 (1 OPTT 0) = 0 0 ! Inferred Vector
+ASK_ITEM 3670016 (1 OPTT 0) = 0 1 ! Inferred Vector
+ASK_ITEM 3670016 (1 OPTT 0) = 0 1 ! Inferred Vector
+ASK_ITEM 3670016 (1 OPTT 0) = 0 0 ! Inferred Vector
+ASK_ITEM 7536640 (1 OPTT 0) = 0 0 ! Inferred Point
+ASK_ITEM 7536640 (1 OPTT 0) = 0 1 ! Inferred Point
+ASK_ITEM 7536640 (1 OPTT 0) = 0 1 ! Inferred Point
+ASK_ITEM 7536640 (1 OPTT 0) = 0 0 ! Inferred Point
+ASK_ITEM 7536640 (1 OPTT 0) = 0 0 ! Inferred Point
+ASK_ITEM 7536640 (1 OPTT 0) = 0 0 ! Inferred Point
+ASK_ITEM 8781824 (1 OPTT 0) = 0 0 ! Inferred Vector
+ASK_ITEM 8781824 (1 OPTT 0) = 0 1 ! Inferred Vector
+ASK_ITEM 8781824 (1 OPTT 0) = 0 1 ! Inferred Vector
+ASK_ITEM 8781824 (1 OPTT 0) = 0 0 ! Inferred Vector
+ASK_ITEM 10354688 (1 OPTT 0) = 0 0 ! Inferred Point
+ASK_ITEM 10354688 (1 OPTT 0) = 0 1 ! Inferred Point
+ASK_ITEM 10354688 (1 OPTT 0) = 0 1 ! Inferred Point
+ASK_ITEM 10354688 (1 OPTT 0) = 0 0 ! Inferred Point
+ASK_ITEM 10354688 (1 OPTT 0) = 0 0 ! Inferred Point
+ASK_ITEM 10354688 (1 OPTT 0) = 0 0 ! Inferred Point
+ASK_ITEM 12451840 (1 BOOL 0) = 1  ! Show Previous State
+ASK_ITEM 12451840 (1 BOOL 0) = 0  ! Show Previous State
+ASK_ITEM 13631488 (1 BOOL 0) = 1  ! Show Previous State
+ASK_ITEM 13631488 (1 BOOL 0) = 0  ! Show Previous State
+ASK_ITEM 14286848 (1 BOOL 0) = 1  ! Assign Color Attribute
+ASK_ITEM 14286848 (1 BOOL 0) = 0  ! Assign Color Attribute
+ASK_ITEM 14483456 (1 BOOL 0) = 1  ! Add Modeling Feature Attributes
+ASK_ITEM 14483456 (1 BOOL 0) = 0  ! Add Modeling Feature Attributes
+ASK_ITEM 17825792 (1 BOOL 0) = 1  ! Show Previous State
+ASK_ITEM 17825792 (1 BOOL 0) = 0  ! Show Previous State
+ASK_ITEM 18612224 (1 BOOL 0) = 1  ! Show Previous State
+ASK_ITEM 18612224 (1 BOOL 0) = 0  ! Show Previous State
+EVENT FOCUS_IN -10 0, 327680, 1, 0, 0! Parametric Recognition
+ASK_ITEM 327680 (1 OPTM 0) = 1  ! Parametric Recognition
+DIALOG_BEGIN "Find Features" 0 ! Special
+BEG_ITEM 327680 (1 OPTM 0) = 1  ! Parametric Recognition
+BEG_ITEM 917504 (1 OPTM 0) = 2  ! Specify
+BEG_ITEM 1114112 (1 BOOL 0) = 0  ! 
+BEG_ITEM 1638400 (1 BOOL 0) = 0  ! Show Previous State
+BEG_ITEM 2293760 (1 BOOL 0) = 1  ! Use Feature Name as Type
+BEG_ITEM 2490368 (1 BOOL 0) = 0  ! Map Features
+BEG_ITEM 3276800 (1 OPTM 0) = 0  ! None
+BEG_ITEM 3670016 (1 OPTT 0) = 0 0 ! Inferred Vector
+BEG_ITEM 4653056 (1 OPTM 0) = 0  ! Inferred Vector
+BEG_ITEM 4653058 (0 TOOL 0) = 0  ! Inferred Vector
+BEG_ITEM 7274496 (0 REAL 0) = 0.0000010000000000  ! Tolerance
+BEG_ITEM 7536640 (1 OPTT 0) = 0 0 ! Inferred Point
+BEG_ITEM 8126464 (1 OPTM 0) = 0  ! Inferred Point
+BEG_ITEM 8126466 (0 TOOL 0) = 0  ! Inferred Point
+BEG_ITEM 8781824 (1 OPTT 0) = 0 0 ! Inferred Vector
+BEG_ITEM 9764864 (1 OPTM 0) = 0  ! Inferred Vector
+BEG_ITEM 9764866 (0 TOOL 0) = 0  ! Inferred Vector
+BEG_ITEM 10354688 (1 OPTT 0) = 0 0 ! Inferred Point
+BEG_ITEM 10944512 (1 OPTM 0) = 0  ! Inferred Point
+BEG_ITEM 10944514 (0 TOOL 0) = 0  ! Inferred Point
+BEG_ITEM 11927552 (1 BOOL 0) = 0  ! Face
+BEG_ITEM 12451840 (1 BOOL 0) = 0  ! Show Previous State
+BEG_ITEM 13107200 (1 BOOL 0) = 0  ! Face
+BEG_ITEM 13631488 (1 BOOL 0) = 0  ! Show Previous State
+BEG_ITEM 14286848 (1 BOOL 0) = 0  ! Assign Color Attribute
+BEG_ITEM 14483456 (1 BOOL 0) = 0  ! Add Modeling Feature Attributes
+BEG_ITEM 15073281 (1 MULT 0) = 0  ! List (Items selected)
+BEG_ITEM 16973826 (1 STRN 0) = ""  !  
+BEG_ITEM 17301504 (1 BOOL 0) = 0  ! Face
+BEG_ITEM 17825792 (1 BOOL 0) = 0  ! Show Previous State
+BEG_ITEM 18087936 (1 BOOL 0) = 0  ! Face
+BEG_ITEM 18612224 (1 BOOL 0) = 0  ! Show Previous State
+BEG_ITEM 21233666 (1 BOOL 0) = 1  ! Preview
+ASK_ITEM 1114112 (1 BOOL 0) = 0  ! 
+ASK_ITEM 1114112 (1 BOOL 0) = 1  ! 
+EVENT FOCUS_IN -10 0, 917504, 2, 0, 0! Specify
+ASK_ITEM 917504 (1 OPTM 0) = 2  ! Specify
+EVENT ACTIVATE -10 0, 917504, 0, 0, 0! Workpiece
+ASK_ITEM 917504 (1 OPTM 0) = 0  ! Workpiece
+ASK_ITEM 917504 (1 OPTM 0) = 0  ! Workpiece
+ASK_ITEM 1114112 (1 BOOL 0) = 1  ! 
+ASK_ITEM 1114112 (1 BOOL 0) = 0  ! 
+EVENT FOCUS_IN -10 0, 16187392, 0, 0, 0! Find Features
+EVENT ACTIVATE -10 0, 16187392, 0, 0, 0! <DLC> Find Features
+ASK_ITEM 15073281 (1 MULT 0) = 0  ! List
+ASK_ITEM 15073281 (1 MULT 0) = 12  ! List
+     POSITION = 0 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 1 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 2 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 3 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 4 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 5 "STEP1HOLE_THREAD" ! Index/contents of selected item
+     POSITION = 6 "STEP1POCKET" ! Index/contents of selected item
+     POSITION = 7 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 8 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 9 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 10 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 11 "STEP2POCKET" ! Index/contents of selected item
+OK -10 0 ! OK Callback  
+END_ITEM 327680 (1 OPTM 0) = 1  ! Parametric Recognition
+END_ITEM 917504 (1 OPTM 0) = 0  ! Workpiece
+END_ITEM 1114112 (0 BOOL 0) = 0  ! 
+END_ITEM 1638400 (0 BOOL 0) = 0  ! Show Previous State
+END_ITEM 2293760 (1 BOOL 0) = 1  ! Use Feature Name as Type
+END_ITEM 2490368 (1 BOOL 0) = 0  ! Map Features
+END_ITEM 3276800 (1 OPTM 0) = 0  ! None
+END_ITEM 3670016 (1 OPTT 0) = 0 0 ! Inferred Vector
+END_ITEM 4653056 (1 OPTM 0) = 0  ! Inferred Vector
+END_ITEM 4653058 (0 TOOL 0) = 0  ! Inferred Vector
+END_ITEM 7274496 (0 REAL 0) = 0.0000010000000000  ! Tolerance
+END_ITEM 7536640 (1 OPTT 0) = 0 0 ! Inferred Point
+END_ITEM 8126464 (1 OPTM 0) = 0  ! Inferred Point
+END_ITEM 8126466 (0 TOOL 0) = 0  ! Inferred Point
+END_ITEM 8781824 (1 OPTT 0) = 0 0 ! Inferred Vector
+END_ITEM 9764864 (1 OPTM 0) = 0  ! Inferred Vector
+END_ITEM 9764866 (0 TOOL 0) = 0  ! Inferred Vector
+END_ITEM 10354688 (1 OPTT 0) = 0 0 ! Inferred Point
+END_ITEM 10944512 (1 OPTM 0) = 0  ! Inferred Point
+END_ITEM 10944514 (0 TOOL 0) = 0  ! Inferred Point
+END_ITEM 11927552 (1 BOOL 0) = 0  ! Face
+END_ITEM 12451840 (1 BOOL 0) = 0  ! Show Previous State
+END_ITEM 13107200 (1 BOOL 0) = 0  ! Face
+END_ITEM 13631488 (1 BOOL 0) = 0  ! Show Previous State
+END_ITEM 14286848 (1 BOOL 0) = 0  ! Assign Color Attribute
+END_ITEM 14483456 (1 BOOL 0) = 0  ! Add Modeling Feature Attributes
+END_ITEM 15073281 (1 MULT 0) = 12  ! List (Items selected)
+     POSITION = 0 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 1 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 2 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 3 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 4 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 5 "STEP1HOLE_THREAD" ! Index/contents of selected item
+     POSITION = 6 "STEP1POCKET" ! Index/contents of selected item
+     POSITION = 7 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 8 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 9 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 10 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 11 "STEP2POCKET" ! Index/contents of selected item
+END_ITEM 16973826 (1 STRN 0) = ""  !  
+END_ITEM 17301504 (1 BOOL 0) = 0  ! Face
+END_ITEM 17825792 (1 BOOL 0) = 0  ! Show Previous State
+END_ITEM 18087936 (1 BOOL 0) = 0  ! Face
+END_ITEM 18612224 (1 BOOL 0) = 0  ! Show Previous State
+END_ITEM 21233666 (1 BOOL 0) = 1  ! Preview
+DIALOG_END -2, 0 ! Find Features: OK
+CUSTOM 29 UGS::CamUI::NavViewFeature * TREE_TYPE * NODE_MENUPOPUP * 2 * (0 0) ! model4
+DYN_POP_TOGGLE 2 1 "" ! Group Features...
+ASK_ITEM 1638400 (1 BOOL 0) = 1  ! Show Previous State
+ASK_ITEM 1638400 (1 BOOL 0) = 0  ! Show Previous State
+ASK_ITEM 4194304 (1 OPTT 0) = 0 0 ! Inferred Vector
+ASK_ITEM 4194304 (1 OPTT 0) = 0 1 ! Inferred Vector
+ASK_ITEM 4194304 (1 OPTT 0) = 0 1 ! Inferred Vector
+ASK_ITEM 4194304 (1 OPTT 0) = 0 0 ! Inferred Vector
+ASK_ITEM 8650752 (1 BOOL 0) = 1  ! Machining Access Direction
+ASK_ITEM 2293761 (1 MULT 0) = 6  ! List
+     POSITION = 0 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 1 "STEP1HOLE_THREAD" ! Index/contents of selected item
+     POSITION = 2 "STEP1POCKET" ! Index/contents of selected item
+     POSITION = 3 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 4 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 5 "STEP2POCKET" ! Index/contents of selected item
+EVENT FOCUS_IN -10 0, 327680, 0, 0, 0! All Features
+ASK_ITEM 327680 (1 OPTM 0) = 0  ! All Features
+DIALOG_BEGIN "Group Features" 0 ! Special
+BEG_ITEM 327680 (1 OPTM 0) = 0  ! All Features
+BEG_ITEM 524288 (0 BOOL 0) = 0  ! Feature
+BEG_ITEM 1114112 (0 BOOL 0) = 0  ! Face
+BEG_ITEM 1638400 (0 BOOL 0) = 0  ! Show Previous State
+BEG_ITEM 2293761 (1 MULT 0) = 6  ! List (Items selected)
+     POSITION = 0 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 1 "STEP1HOLE_THREAD" ! Index/contents of selected item
+     POSITION = 2 "STEP1POCKET" ! Index/contents of selected item
+     POSITION = 3 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 4 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 5 "STEP2POCKET" ! Index/contents of selected item
+BEG_ITEM 3801088 (1 OPTM 0) = 0  ! None
+BEG_ITEM 4194304 (1 OPTT 0) = 0 0 ! Inferred Vector
+BEG_ITEM 5177344 (1 OPTM 0) = 0  ! Inferred Vector
+BEG_ITEM 5177346 (0 TOOL 0) = 0  ! Inferred Vector
+BEG_ITEM 7798784 (0 REAL 0) = 0.0000010000000000  ! Tolerance
+BEG_ITEM 8388609 (1 OPTM 0) = 2  ! Predefined
+BEG_ITEM 8650752 (1 BOOL 0) = 1  ! Machining Access Direction
+BEG_ITEM 9240577 (1 OPTM 0) = 0  ! Automatic
+BEG_ITEM 9895937 (1 MULT 0) = 0  ! List (Items selected)
+BEG_ITEM 11534338 (1 BOOL 0) = 1  ! Preview
+EVENT FOCUS_IN -10 0, 11010048, 0, 0, 0! Create Feature Groups
+EVENT ACTIVATE -10 0, 11010048, 0, 0, 0! <DLC> Create Feature Groups
+ASK_ITEM 2293761 (1 MULT 0) = 6  ! List
+     POSITION = 0 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 1 "STEP1HOLE_THREAD" ! Index/contents of selected item
+     POSITION = 2 "STEP1POCKET" ! Index/contents of selected item
+     POSITION = 3 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 4 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 5 "STEP2POCKET" ! Index/contents of selected item
+ASK_ITEM 9895937 (1 MULT 0) = 0  ! List
+ASK_ITEM 2293761 (1 MULT 0) = 5  ! List
+     POSITION = 0 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 1 "STEP1POCKET" ! Index/contents of selected item
+     POSITION = 2 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 3 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 4 "STEP2POCKET" ! Index/contents of selected item
+OK -10 0 ! OK Callback  
+END_ITEM 327680 (1 OPTM 0) = 0  ! All Features
+END_ITEM 524288 (0 BOOL 0) = 0  ! Feature
+END_ITEM 1114112 (0 BOOL 0) = 0  ! Face
+END_ITEM 1638400 (0 BOOL 0) = 0  ! Show Previous State
+END_ITEM 2293761 (1 MULT 0) = 5  ! List (Items selected)
+     POSITION = 0 "STEP1HOLE" ! Index/contents of selected item
+     POSITION = 1 "STEP1POCKET" ! Index/contents of selected item
+     POSITION = 2 "STEP1POCKET_THREAD" ! Index/contents of selected item
+     POSITION = 3 "STEP2HOLE" ! Index/contents of selected item
+     POSITION = 4 "STEP2POCKET" ! Index/contents of selected item
+END_ITEM 3801088 (1 OPTM 0) = 0  ! None
+END_ITEM 4194304 (1 OPTT 0) = 0 0 ! Inferred Vector
+END_ITEM 5177344 (1 OPTM 0) = 0  ! Inferred Vector
+END_ITEM 5177346 (0 TOOL 0) = 0  ! Inferred Vector
+END_ITEM 7798784 (0 REAL 0) = 0.0000010000000000  ! Tolerance
+END_ITEM 8388609 (1 OPTM 0) = 2  ! Predefined
+END_ITEM 8650752 (1 BOOL 0) = 1  ! Machining Access Direction
+END_ITEM 9240577 (1 OPTM 0) = 0  ! Automatic
+END_ITEM 9895937 (1 MULT 0) = 0  ! List (Items selected)
+END_ITEM 11534338 (1 BOOL 0) = 1  ! Preview
+DIALOG_END -2, 0 ! Group Features: OK
+CUSTOM 26 1 2 18 ! Activate Operation Navigator

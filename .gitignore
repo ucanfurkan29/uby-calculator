@@ -1,0 +1,20 @@
+# İşletim Sistemi Dosyaları
+Thumbs.db
+.DS_Store
+ehthumbs.db
+Desktop.ini
+
+# Editör Dosyaları
+.vscode/
+.idea/
+*.sublime-workspace
+*.swp
+
+# Loglar
+*.log
+npm-debug.log*
+
+# Node (Eğer ileride kullanılırsa)
+node_modules/
+dist/
+build/
