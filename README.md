@@ -1,5 +1,7 @@
 # Mühendislik Hesaplama Araçları | Üçüncü Binyıl
 
+🌐 **Canlı Proje:** [ucuncubinyil.com/calculator](https://www.ucuncubinyil.com/calculator)  
+
 Bu proje, mühendislik ve imalat süreçlerinde sıkça ihtiyaç duyulan teknik hesaplamaları (Koni açınımı, K-Faktörü, Teorik ağırlık vb.) kolaylaştırmak amacıyla geliştirilmiş web tabanlı bir araç setidir.
 
 ## 🚀 Özellikler ve Ekran Görüntüleri
